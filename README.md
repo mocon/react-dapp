@@ -5,12 +5,23 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Hardhat commands
 
 ```shell
-npx hardhat # Set up Hardhat environment
-npx hardhat accounts # List accounts
-npx hardhat compile # Compile smart contracts
-npx hardhat test
+# Set up Hardhat environment
+npx hardhat
+
+# List accounts
+npx hardhat accounts
+
+# Compile smart contracts
+npx hardhat compile
+
+# Deploy smart contracts to local network
+npx hardhat run scripts/deploy.js --network localhost
+
+# Deploy smart contracts to Ropsten testnet
+npx hardhat run scripts/deploy.js --network ropsten
+
 npx hardhat node
-npx hardhat run scripts/deploy.js --network localhost # Deploy smart contracts
+npx hardhat test
 npx hardhat help
 ```
 
