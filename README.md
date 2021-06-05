@@ -12,36 +12,17 @@ npx hardhat
 
 ```
 npx hardhat accounts
-npx hardhat compile
+npx hardhat compile # Compile smart contracts
 npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js --network localhost
 npx hardhat help
 ```
 
-## Available Scripts
+## React commands
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+yarn start # Runs the app in the development mode on http://localhost:3000
+yarn test # Launches the test runner in the interactive watch mode
+yarn build # Builds the app for production to the `build` folder
+```
