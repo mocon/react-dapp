@@ -4,8 +4,6 @@ Uses [ethers](https://github.com/ethers-io/ethers.js) and [Hardhat](https://hard
 
 ## Hardhat commands
 
-See https://hardhat.org/getting-started.
-
 ```shell
 # Set up Hardhat environment
 npx hardhat
@@ -35,7 +33,12 @@ npx hardhat help
 ## React commands
 
 ```shell
-yarn start # Runs the app in the development mode on http://localhost:3000
-yarn test # Launches the test runner in the interactive watch mode
-yarn build # Builds the app for production to the `build` folder
+# Runs the app in the development mode on http://localhost:3000
+yarn start
+
+# Launches the test runner in the interactive watch mode
+yarn test
+
+# Builds the app for production to the `build` folder
+yarn build
 ```
