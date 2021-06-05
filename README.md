@@ -8,6 +8,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 npx hardhat
 ```
 
+### Hardhat commands
+
+```
+npx hardhat accounts
+npx hardhat compile
+npx hardhat test
+npx hardhat node
+npx hardhat run scripts/deploy.js --network localhost
+npx hardhat help
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
