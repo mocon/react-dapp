@@ -10,6 +10,13 @@ In the second terminal, compile the smart contracts with `npx hardhat compile`, 
 
 In the third terminal, run the React frontend with `yarn start`. You should be able to fetch the smart contract greeting without the need for gas fees, and set it after confirming the transaction and gas fees using the MetaMask popup. To send MYLS tokens to another account, import Account #1 or another one into MetaMask, then copy its address.
 
+## Tests
+
+```shell
+npx hardhat test # Test smart contracts
+yarn test # Test React frontend
+```
+
 ## Hardhat commands
 
 ```shell
