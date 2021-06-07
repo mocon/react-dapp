@@ -123,7 +123,7 @@ export default function App() {
           placeholder='Amount'
         />
         <button onClick={sendCoins} disabled={!userAccount || !amount}>
-          Send Coins
+          Send Myloshis
         </button>
       </section>
     </div>
