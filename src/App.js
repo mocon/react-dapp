@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { ethers } from 'ethers'
+import { myloshisToMYLS } from './utils/format'
 
 // Import contract/token ABIs and addresses
 // see https://docs.soliditylang.org/en/v0.8.3/abi-spec.html
@@ -26,7 +27,7 @@ export default function App() {
       const provider = new ethers.providers.Web3Provider(window.ethereum)
       const contract = new ethers.Contract(tokenAddress, Token.abi, provider)
       const balance = await contract.balanceOf(account)
-      console.log('🏀 balance =>', balance.toString())
+      console.log('🏀 balance =>', myloshisToMYLS(balance))
     }
   }
 
@@ -42,7 +43,7 @@ export default function App() {
       console.log(
         '🏀 transaction =>',
         transaction,
-        `${amount} coins successfully sent to ${userAccount}`,
+        `${myloshisToMYLS(amount)} coins successfully sent to ${userAccount}`,
       )
     }
   }
